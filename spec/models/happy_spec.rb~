@@ -1,0 +1,14 @@
+require 'rails_helper'
+
+RSpec.describe Happy, :type => :model do
+  before(:each) do
+    @existing_happy = Happy.create(:text => 'xxx')
+    @existing_happy.save
+  end
+  
+
+  it "should enforce the uniqueness of happy text" do
+    new_happy = Happy.new(:text => 'xxx')
+    expect(new_happy).not_to be_valid
+  end
+end

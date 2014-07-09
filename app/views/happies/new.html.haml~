@@ -1,0 +1,3 @@
+%h1 What made you :) today?
+%form
+  My happy thing for today was...: %input type="text"
