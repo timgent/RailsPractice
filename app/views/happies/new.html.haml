@@ -1,3 +1,8 @@
 %h1 What made you :) today?
-%form
-  %input{:type=>"text"}
+
+= form_for Happy.new do |happy|
+
+  = happy.text_field :text
+  = happy.date_select :date
+
+  = submit_tag 'Save Changes'

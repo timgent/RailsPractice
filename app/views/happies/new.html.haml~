@@ -1,3 +1,8 @@
 %h1 What made you :) today?
-%form
-  My happy thing for today was...: %input type="text"
+
+= form_for Happy.new do |happy|
+
+  = happy.text_field :text
+
+
+  = submit_tag 'Save Changes'

@@ -1,0 +1,13 @@
+%h1 Recent happies for your enjoyment...
+
+%h2= flash[:notice]
+
+%table
+  %thead
+    %tr
+      %th Happy
+  %tbody
+    - @happies.each do |happy|
+      %tr
+        %td= happy.text
+        

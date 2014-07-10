@@ -11,12 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140709222309) do
+ActiveRecord::Schema.define(version: 20140710220422) do
 
   create_table "happies", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "text"
+    t.binary   "image"
+    t.integer  "userid"
+    t.datetime "date"
   end
+
+# Could not dump table "sqlite_stat1" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
 end
