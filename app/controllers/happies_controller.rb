@@ -19,7 +19,7 @@ end
 
 
 def happy_params
-  happy_params = [text: params[:happy][:text], image: params[:happy][:image], date: happy_date]
+  happy_params = [text: params[:happy][:text], date: happy_date]
 end
 
 

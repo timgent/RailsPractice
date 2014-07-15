@@ -1,0 +1,4 @@
+class AddHappiesTable < ActiveRecord::Migration
+  def change
+  end
+end

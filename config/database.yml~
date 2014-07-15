@@ -19,7 +19,7 @@ development:
 # Do not set this db to the same as development or production.
 test: &test
   <<: *default
-  database: rails_practice_test
+  database: rails_practice_sqlite
 
 production:
   <<: *default

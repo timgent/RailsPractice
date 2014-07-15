@@ -3,7 +3,7 @@ class HappiesController < ApplicationController
   end
   
   def create
-    @happy = Happy.create(text: params[:happy][:text])
+    @happy = Happy.create(happy_params)
     flash[:notice] = "here are my params #{params[:happy]} and my modified happy_params: #{happy_params}"
     redirect_to happies_path
   end
@@ -19,7 +19,7 @@ end
 
 
 def happy_params
-  happy_params = [text: params[:happy][:text], image: params[:happy][:image], date: happy_date]
+  happy_params = [text: params[:happy][:text], date: happy_date]
 end
 
 

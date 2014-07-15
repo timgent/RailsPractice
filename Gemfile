@@ -5,7 +5,7 @@ gem 'haml'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,3 +51,5 @@ group :test do
 end
 
 gem 'rails_12factor', group: :production
+
+gem "paperclip", "~> 4.1"

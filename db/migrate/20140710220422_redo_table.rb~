@@ -1,6 +1,6 @@
 class RedoTable < ActiveRecord::Migration
   def change
-    DROP TABLE :happies
+    drop_table :happies
     create_table :happies do |t|
       t.timestamps
     end
